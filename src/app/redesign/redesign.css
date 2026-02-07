@@ -1,0 +1,89 @@
+.maya-page {
+  --lilac-text: #1f2d2f;
+  --lilac-bg: #f6f4ef;
+  --lilac-light: #ebe8de;
+  --lilac-bright: #e3ece9;
+  --lilac-dark: #1b3438;
+
+  background: var(--lilac-bg);
+  color: var(--lilac-text);
+  font-family: var(--maya-body), var(--font-body), sans-serif;
+}
+
+.maya-page .lilac-header {
+  background: color-mix(in srgb, var(--lilac-bg) 88%, transparent);
+}
+
+.maya-page .lilac-logo,
+.maya-page .lilac-desktop-nav a,
+.maya-page .lilac-menu-panel a,
+.maya-page .lilac-hero-copy h1,
+.maya-page .lilac-split-copy h2,
+.maya-page .lilac-faq-title,
+.maya-page .lilac-background-title,
+.maya-page .lilac-cta-inner h3,
+.maya-page .lilac-footer-main h3,
+.maya-page .lilac-footer-main h4,
+.maya-page .lilac-section-kicker,
+.maya-page .lilac-specialty-card h3,
+.maya-page .lilac-accordion summary {
+  font-family: var(--maya-display), var(--font-display), serif;
+}
+
+.maya-page .lilac-button-primary,
+.maya-page .lilac-button-secondary {
+  border-color: #1f4f57;
+  color: #1f4f57;
+}
+
+.maya-page .lilac-button-primary:hover,
+.maya-page .lilac-button-secondary:hover {
+  background: #1f4f57;
+  color: #f6f4ef;
+}
+
+.maya-page .lilac-dark-cta .lilac-button-primary {
+  border-color: #f6f4ef;
+  color: #f6f4ef;
+}
+
+.maya-page .lilac-dark-cta .lilac-button-primary:hover {
+  background: #f6f4ef;
+  color: #1b3438;
+}
+
+.maya-page .lilac-about-circle {
+  border-color: var(--lilac-light);
+}
+
+.maya-office-section .lilac-split-copy h2 {
+  margin-bottom: 1rem;
+}
+
+.maya-office-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(0.8rem, 1.7vw, 1.2rem);
+}
+
+.maya-office-gallery .lilac-rect-image {
+  aspect-ratio: 3 / 2.1;
+}
+
+.maya-legal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+}
+
+@media (max-width: 980px) {
+  .maya-office-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .maya-page .lilac-about-circle {
+    border-color: #ffffff;
+  }
+}
