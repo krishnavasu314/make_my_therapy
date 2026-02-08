@@ -32,7 +32,7 @@ const bodyFont = Manrope({
 });
 
 const images = {
-  hero: "/images/therapy-e.jpg",
+  hero: "/images/therapy-a.jpg",
   split: "/images/therapy-f.jpg",
   service1: "/images/therapy-a.jpg",
   service2: "/images/therapy-c.jpg",
